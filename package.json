@@ -1,0 +1,23 @@
+{
+  "name": "youtube-clone",
+  "version": "0.0.1",
+  "description": "An old version(Aug 2019) of youtube video player page clone",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abredi/youtube-clone.git"
+  },
+  "author": "https://twitter.com/rediabdulaziz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abredi/youtube-clone/issues"
+  },
+  "homepage": "https://github.com/abredi/youtube-clone#readme",
+  "devDependencies": {
+    "stylelint": "^13.3.3",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
