@@ -1,3 +1,11 @@
 body {
   margin: 0;
 }
+
+input{float: right;
+  width: 500px;
+  height: 25px;
+  margin-right: 100px;}
+
+  button{width: 41px;
+    height: 21px;}
