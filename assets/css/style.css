@@ -1,11 +1,25 @@
+/**
+grid positioning
+*/
 body {
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(5);
+  background-color: #f1f1f1;
 }
 
-input{float: right;
-  width: 500px;
-  height: 25px;
-  margin-right: 100px;}
+.row {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
-  button{width: 41px;
-    height: 21px;}
+.half-1 {
+  grid-column-start: 1 !important;
+  grid-column-end: 2 !important;
+}
+
+.half-2 {
+  grid-column-start: 2 !important;
+  grid-column-end: 3 !important;
+}
