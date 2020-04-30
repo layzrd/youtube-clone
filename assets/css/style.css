@@ -31,14 +31,6 @@ flex positioning
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-}
-.row.header * {
-  flex-grow: 1;
-}
-
-.form-inline {
-  flex-grow: 9 !important;
 }
 
 /* 
@@ -57,10 +49,9 @@ spacing
 header
  */
 
-.row.header {
-  background-color: #fff;
-  padding: 0.5em 1em;
-}
+ .row.header {
+   background-color: #fff;
+ }
 
 .brand-img {
   width: 100px;
@@ -78,8 +69,11 @@ header
 header forms
 */
 
-.form-inline {
+.inline-form * {
   margin: 0;
+}
+
+.form-inline {
   width: 60%;
   display: inherit;
 }
@@ -88,7 +82,6 @@ header forms
   color: #a0a0a0;
   background: #f8f8f8;
   padding: 0 2em;
-  border: 1px solid #e8e2e2;
 }
 
 .input-inline {
@@ -98,9 +91,7 @@ header forms
 }
 
 .nav-list {
-  margin: 0;
-  display: inline-flex;
-  align-items: center;
+  margin-right: 2em;
 }
 .list-item {
   display: inline;
@@ -118,16 +109,40 @@ header forms
   font-size: 11px;
   background-color: #387cc0;
   color: #fff;
-  border-radius: 2px;
-  border: none;
+  border-radius: 3px;
 }
+ i.close{float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+  color: white;}
+  span.langua{
+    height: 30px;
+    color: white;
+    margin-left: 50px;}
 
-
-/* 
-media queries
-*/
-@media (min-width: 320px) and (max-width: 480px) {
-  .form-inline {
-    padding-bottom: 0.5em;
+  div.banner-header{
+     height: 30px;
+    width: auto;
   }
+
+  div.banner-body{height: 40px;
+  background-color: white;
+  margin:0px 2px 2px 2px;
 }
+
+a.right{font-size: smaller;
+  text-decoration: none;
+  float: right;
+  
+}
+  
+div#lang-pref.row.banner{background-color: #3455eb;}
+span{margin-left: 15px;
+  font-size: smaller;
+}
+
+label{
+  font-size: smaller;
+  color: #3455eb;
+}
+
