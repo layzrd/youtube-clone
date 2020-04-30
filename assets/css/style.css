@@ -31,14 +31,6 @@ flex positioning
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-}
-.row.header * {
-  flex-grow: 1;
-}
-
-.form-inline {
-  flex-grow: 9 !important;
 }
 
 /* 
@@ -69,10 +61,9 @@ spacing
 header
  */
 
-.row.header {
-  background-color: #fff;
-  padding: 0.5em 1em;
-}
+ .row.header {
+   background-color: #fff;
+ }
 
 .brand-img {
   width: 100px;
@@ -90,8 +81,11 @@ header
 header forms
 */
 
-.form-inline {
+.inline-form * {
   margin: 0;
+}
+
+.form-inline {
   width: 60%;
   display: inherit;
 }
@@ -100,7 +94,6 @@ header forms
   color: #a0a0a0;
   background: #f8f8f8;
   padding: 0 2em;
-  border: 1px solid #e8e2e2;
 }
 
 .input-inline {
@@ -109,10 +102,12 @@ header forms
   padding: 2px 6px;
 }
 
+a,li{text-decoration: none;
+  list-style-type: none;
+}
+
 .nav-list {
-  margin: 0;
-  display: inline-flex;
-  align-items: center;
+  margin-right: 2em;
 }
 .list-item {
   display: inline;
@@ -126,8 +121,25 @@ header forms
   font-size: 11px;
   background-color: #387cc0;
   color: #fff;
-  border-radius: 2px;
-  border: none;
+  border-radius: 3px;
+}
+ i.close{float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+  color: white;}
+  span.langua{
+    height: 30px;
+    color: white;
+    margin-left: 50px;}
+
+  div.banner-header{
+     height: 30px;
+    width: auto;
+  }
+
+  div.banner-body{height: 40px;
+  background-color: white;
+  margin:0px 2px 2px 2px;
 }
 
 /**
@@ -200,3 +212,35 @@ media queries
     padding-bottom: 0.5em;
   }
 }
+
+/**
+code from @Ade
+*/
+
+  ul.light{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 320px;
+    font-size: small;
+  }
+
+  div.setting{display: grid;
+    grid-template-columns: repeat(6,auto);
+  width: 900px;
+  margin-left: 40px;
+  margin-top: 15px;}
+
+  select#language,select#location{
+    height: 32px;
+    width: 102px;
+   }
+
+label.language,label.location,label.res_mode{font-size: medium;}
+
+select#res-mode{height: 34px;
+  width: 57px;}
+  i.fas.fa-hourglass-half, i.fas.fa-question-circle{height:18px;
+    margin-top: 7px;}
+
+    /**
+    end @Ade */
