@@ -90,6 +90,10 @@ header forms
   padding: 2px 6px;
 }
 
+a,li{text-decoration: none;
+  list-style-type: none;
+}
+
 .nav-list {
   margin-right: 2em;
 }
@@ -146,3 +150,33 @@ label{
   color: #3455eb;
 }
 
+ul.bold{display: grid;
+  grid-template-columns: repeat(6, auto);
+  width: 400px;
+  font-size: medium;
+}
+
+  ul.light{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 320px;
+    font-size: small;
+  }
+
+  div.setting{display: grid;
+    grid-template-columns: repeat(6,auto);
+  width: 900px;
+  margin-left: 40px;
+  margin-top: 15px;}
+
+  select#language,select#location{
+    height: 32px;
+    width: 102px;
+   }
+
+label.language,label.location,label.res_mode{font-size: medium;}
+
+select#res-mode{height: 34px;
+  width: 57px;}
+  i.fas.fa-hourglass-half, i.fas.fa-question-circle{height:18px;
+    margin-top: 7px;}
