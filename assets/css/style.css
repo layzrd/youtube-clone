@@ -31,6 +31,14 @@ flex positioning
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.row.header * {
+  flex-grow: 1;
+}
+
+.form-inline {
+  flex-grow: 9 !important;
 }
 
 /* 
@@ -49,9 +57,10 @@ spacing
 header
  */
 
- .row.header {
-   background-color: #fff;
- }
+.row.header {
+  background-color: #fff;
+  padding: 0.5em 1em;
+}
 
 .brand-img {
   width: 100px;
@@ -69,11 +78,8 @@ header
 header forms
 */
 
-.inline-form * {
-  margin: 0;
-}
-
 .form-inline {
+  margin: 0;
   width: 60%;
   display: inherit;
 }
@@ -82,6 +88,7 @@ header forms
   color: #a0a0a0;
   background: #f8f8f8;
   padding: 0 2em;
+  border: 1px solid #e8e2e2;
 }
 
 .input-inline {
@@ -91,7 +98,9 @@ header forms
 }
 
 .nav-list {
-  margin-right: 2em;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
 }
 .list-item {
   display: inline;
@@ -109,5 +118,16 @@ header forms
   font-size: 11px;
   background-color: #387cc0;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 2px;
+  border: none;
+}
+
+
+/* 
+media queries
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-inline {
+    padding-bottom: 0.5em;
+  }
 }
