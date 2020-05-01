@@ -25,7 +25,7 @@
           <i class="fas fa-upload descent"></i>
         </li>
         <li class="list-item">
-          <button class="btn-blue" href="#">Sign in</button>
+          <button class="btn-blue">Sign in</button>
         </li>
       </ul>
     </header>
@@ -45,9 +45,7 @@
           You're viewing YouTube in <b>English (US)</b>. You can
           <a href="#" class="text-small">change this preference below.</a>
         </p>
-        <p class="text-small">
-          <a href="#" class="right">Learn more</a>
-        </p>
+        <p class="text-small"><a href="#" class="right">Learn more</a></p>
       </div>
     </div>
 
@@ -57,7 +55,6 @@
           width="1192"
           height="745"
           src="https://www.youtube.com/embed/V74l_zS1x8E"
-          frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
@@ -68,24 +65,19 @@
         </h2>
         <div class="channel-body pb-half">
           <div class="user-account">
-            <img
-            alt="The Odin Project"
-            class="channel-img"
-            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgUCCAMNAwMEAwkEBQgFBQQQBQoHBxAIDAYMDAsKCwoNDhIQDQ4RDgsLEBYJERMUFQwVCA8XGBYUDhELDAoBAwQEBgUGCgYGCBQNCwsUExQODhANFBANFA0NFBAODRQJCxMJDRAUCw4LFAoLFA0UFBQNCAgICAgIDgkICAgICP/AABEIADAAMAMBEQACEQEDEQH/xAAaAAEAAwADAAAAAAAAAAAAAAAABAUHAQIG/8QAKhAAAQMDAQcDBQAAAAAAAAAAAQACAwQFEQYHEhMUITFBMjV0CFFhcbP/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAgUDBAYHAf/EACkRAAEDAQUHBQAAAAAAAAAAAAABAgMEBREhMZETMzRScZLREiJDUcH/2gAMAwEAAhEDEQA/AJC8POMCAIAgCAIAgCAu4dD3WoDDFp+6Ste0OY8UUhaQR0IO71H5WylNMqXpGvavgybN/Kuhy/Ql2iDi/T11YGjJdyUoGPv6UWlmT417V8DZv5V0KNaxjCAIAgNu2L7Zb/X1+lYKi/TyQOqIqY03DYBwwMBud3PYDyuls20al08cSye29Euwy0LGnqJFe1quwJW2/bPf7HctSw0N+np4Y5eEyn4cZG6YRkZLc+T58qdp2jUx1EkbZLm/WGWhKoqJGyOajsDB1y5WBAEAQHuthfvGk/nsVpZfFx9TZpt63qSvqE961T8kfxap2txcnX8QlVb1xnaqDUCAIAgJ9ivlRpqaklts3LS0kglhl3Guw4djhwIP6IWWKV0T0exblTIm1ytX1Jmh21DqGp1VNVS3So5qWqdvzTbjWZOAPS0ADoB2C+zSvmesj1vVc1DnK9fU7NSuWEgEAQBAEAQBAEB//9k="
-          />
-          <div class=" px-1 py-0">
-            <p class="channel-name text-medium pb-half">The Odin Project</p>
-            <button type="button" class="btn subscribe m-0 white">
-              <!-- <span class="bg-youtube"></span> -->
-              <img
-                class="bg-youtube"
-                src="assets/img/youtube-logo.png"
-                alt="YouTube"
-              />
-              Subscribe
-            </button>
-            <span class="subcribers">799</span>
-          </div>
+            <img alt="The Odin Project" class="channel-img" src='assets/img/the_odin_project.jpg' />
+            <div class="px-1 py-0">
+              <p class="channel-name text-medium pb-half">The Odin Project</p>
+              <button type="button" class="btn subscribe m-0 white">
+                <img
+                  class="bg-youtube"
+                  src="assets/img/youtube-logo.png"
+                  alt="YouTube"
+                />
+                Subscribe
+              </button>
+              <span class="subcribers">799</span>
+            </div>
           </div>
 
           <p class="views">50,016 views</p>
@@ -134,30 +126,53 @@
         <div class="show-more text-medium text-center m-0 pt-half">
           <a href="#" class="descent">show more</a>
         </div>
-        
       </section>
       <section class="comments bg-white mt-half p-2">
-        <span class="text-medium descent">
+        <h4 class="text-medium descent">
           <i class="fas fa-spinner"></i>
           Loading
-        </span>
-        
+        </h4>
       </section>
     </aside>
 
     <aside class="half-2 right-side bg-white p-1">
-        <div class="panel">
-            <div class="panel-header pb-1">
-              <span class="text">Up next</span>
-              <div class="auto-play-setting inline-input">
-                  <label for="autoplay" class="playing">Autoplay</label>
-                  <input id="autoplay" class="radio-inline" type="radio" name="autoplay" value="on">
-                  <input type="radio" class="radio-inline" name="autoplay" value="off">
-              </div>
-            </div>
-            <div class="panel-body">
-
-      
+      <div class="panel">
+        <div class="panel-header pb-1">
+          <span class="text">Up next</span>
+          <div class="auto-play-setting inline-input">
+            <label for="autoplay" class="playing">Autoplay</label>
+            <input
+              id="autoplay"
+              class="radio-inline"
+              type="radio"
+              name="autoplay"
+              value="on"
+            />
+            <input
+              type="radio"
+              class="radio-inline"
+              name="autoplay"
+              value="off"
+            />
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="card">
+            <img
+              src="assets/img/Contributing_to_Open_Source_Part_II.jpeg"
+              alt="Contributing to Open Source Part II"
+              class="thumbnail"
+            />
+            <p class="card-info px-half">
+              <span class="info-title text-big">
+                Contributing to Open Source Part II: The Real Way
+              </span>
+              <span class="sugg-channel-name text-medium descent"
+                >The Odin Project</span
+              >
+              <span class="view-count text-medium descent">29,985 views</span>
+            </p>
+          </div>
 
           <div class="card">
             <img
@@ -173,20 +188,131 @@
               <span class="sugg-channel-name text-medium descent">imtiana</span>
               <span class="view-count text-medium descent">981,543 views</span>
             </p>
-           
           </div>
 
+          <div class="card">
+            <img
+              src="assets/img/Programming_in_Visual_Basic_.Net_How_to_Connect_Access_Database_to_VB.Net.jpeg"
+              alt="Programming in Visual Basic"
+              class="thumbnail"
+            />
+            <p class="card-info px-half">
+              <span class="info-title text-big">
+                Programming in Visual Basic .Net How to Connect Access Database
+                to
+              </span>
+              <span class="sugg-channel-name text-medium descent"
+                >iBassKung</span
+              >
+              <span class="view-count text-medium descent">
+                16,130,993 views</span
+              >
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/img/rest_api_concepts.jpeg"
+              alt="REST API concepts and example"
+              class="thumbnail"
+            />
+            <p class="card-info px-half">
+              <span class="info-title text-big">
+                REST API concepts and example.
+              </span>
+              <span class="sugg-channel-name text-medium descent"
+                >WebConcepts</span
+              >
+              <span class="view-count text-medium descent">
+                3,580,484 views</span
+              >
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/img/github_why_microsoft_paid_7.5B.jpeg"
+              alt=" GitHub-Why Microsoft Paid $7.5bB for the future of Software-A Case "
+              class="thumbnail"
+            />
+            <p class="card-info px-half">
+              <span class="info-title text-big">
+                GitHub-Why Microsoft Paid $7.5bB for the future of Software-A
+                Case
+              </span>
+              <span class="sugg-channel-name text-medium descent"
+                >Valuetainment</span
+              >
+              <span class="view-count text-medium descent"> 444,634 views</span>
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/img/how_to_create_a_3d.jpeg"
+              alt="How to create a 3D Terrain with Google Maps"
+              class="thumbnail"
+            />
+            <p class="card-info px-half">
+              <span class="info-title text-big">
+                How to create a 3D Terrain with Google Maps and Height Maps in
+                Photoshops.
+              </span>
+              <span class="sugg-channel-name text-medium descent"
+                >Orange Box Ceo</span
+              >
+              <span class="view-count text-medium descent">
+                2,269,391 views</span
+              >
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/img/convolutional_neural_network.jpeg"
+              alt="Convolutional Neutral Network"
+              class="thumbnail"
+            />
+            <p class="card-info px-half">
+              <span class="info-title text-big">
+                Convolutional Neutral Network (CNNs) Explained
+              </span>
+              <span class="sugg-channel-name text-medium descent"
+                >Deeplizard</span
+              >
+              <span class="view-count text-medium descent"> 239,752 views</span>
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/img/top_linux_jobs_interview.jpeg "
+              alt="Top 10 Linux Jobs Interview Questions"
+              class="thumbnail"
+            />
+            <p class="card-info px-half">
+              <span class="info-title text-big">
+                Top 10 Linux Jobs Interview Questions.
+              </span>
+              <span class="sugg-channel-name text-medium descent"
+                >tutoriaLinux</span
+              >
+              <span class="view-count text-medium descent">
+                1,236,003 views</span
+              >
+            </p>
+          </div>
         </div>
-        <div class="panel footer">
-          <a href="#" class="text-descent uppercase">show more</a>
+        <div class="panel footer text-center pt-half">
+          <a href="#" class="descent uppercase text-medium">show more</a>
         </div>
-      </div> -->
+      </div>
     </aside>
 
-  <footer class="row footer">
+    <footer class="row footer">
       <div class="setting">
         <div class="brand">
-          <img class="brand-img" alt="" src="assets/img/logo.png'" />
+          <img class="brand-img" alt="" src="assets/img/logo.png" />
           <i class="super-script">NL</i>
         </div>
         <div class="lang btn-setting">
