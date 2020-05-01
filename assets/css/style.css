@@ -102,6 +102,19 @@ body {
   grid-column-end: 3;
 }
 
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #006dbb;
+}
+
+.footer a {
+  color: #000;
+}
+
 .card-info * {
   padding-bottom: 0.3em;
 }
@@ -114,7 +127,6 @@ flex positioning
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #fff;
   padding: 0.5em 1em;
 }
 
@@ -225,12 +237,6 @@ header forms
   padding: 2px 6px;
 }
 
-a,
-li {
-  text-decoration: none;
-  list-style-type: none;
-}
-
 .nav-list {
   margin: 0;
   display: inline-flex;
@@ -248,7 +254,6 @@ li {
   font-weight: 500;
   font-size: 11px;
   background-color: #387cc0;
-  color: #fff;
   border-radius: 3px;
 }
 
@@ -267,7 +272,6 @@ bannner
   justify-content: space-between;
   align-items: center;
   background-color: #006dbb;
-  color: #fff;
   font-size: 0.9em;
   font-weight: 500;
   height: 2.2em;
@@ -286,6 +290,10 @@ color
 
 .descent {
   color: #808080;
+}
+
+.black {
+  color: #000;
 }
 
 .white {
@@ -315,11 +323,6 @@ p {
   letter-spacing: 0.001em;
   font-weight: 500;
   font-family: serif;
-}
-
-a {
-  text-decoration: none;
-  color: #006dbb;
 }
 
 /**
