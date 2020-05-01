@@ -419,14 +419,37 @@ label.res_mode {
   font-size: medium;
 }
 
-select#res-mode {
+select#res-mode{
   height: 34px;
-  width: 57px;
-}
-i.fas.fa-hourglass-half,
-i.fas.fa-question-circle {
-  height: 18px;
-  margin-top: 7px;
-}
-/**
-    end @Ade */
+  width: 57px;}
+  i.fas.fa-hourglass-half, i.fas.fa-question-circle{
+  height:18px;
+  margin-top: 7px;}
+
+    div.panel-header{
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+  }
+
+  span.text{margin-left: 0px;
+    margin-top: 5px;
+  font-size: medium;}
+
+  div.auto-play-setting.inline-input{
+    margin-left: 4px;
+    margin-top: 5px;}
+
+    span.video-title,span.channel.text-descent,span.text-descent{margin-left: 0px;
+    font-size:1.5em;}
+    div.card{display:grid;}
+    img.thumbnail{width: 350px;
+      height: 200px;}
+
+      div.panel-body{width: 400px;
+        margin-bottom: 400px;}
+
+      label.playing{font-size: medium;
+    color: #3455eb;
+    margin-left: 250px;}
+    span.text-descent,span.channel.text-descent {color: blueviolet;
+    font-size: medium;}
