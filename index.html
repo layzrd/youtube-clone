@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contributing to Open Source Part I: The Easy Way</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.css" />
   </head>
   <body>
-    <header class="row header">
+    <header class="row header bg-white">
       <i class="fas fa-bars px-2"></i>
       <div class="brand">
         <img class="brand-img" alt="" src="assets/img/logo.png'" />
@@ -22,7 +22,7 @@
       </form>
       <ul class="nav-list">
         <li class="list-item">
-          <i class="fas fa-upload descent-text"></i>
+          <i class="fas fa-upload descent"></i>
         </li>
         <li class="list-item">
           <button class="btn-blue" href="#">Sign in</button>
@@ -32,16 +32,15 @@
 
     <div class="row banner my-1" id="lang-pref">
       <div class="banner-header px-1">
-        <p> 
+        <p>
           <i class="fas fa-user-edit"></i>
           Choose your language.
         </p>
         <p>
           <i class="fas fa-times"></i>
         </p>
-         
       </div>
-      <div class="banner-body px-2">
+      <div class="banner-body px-2 bg-white">
         <p class="text-medium">
           You're viewing YouTube in <b>English (US)</b>. You can
           <a href="#" class="text-small">change this preference below.</a>
@@ -49,113 +48,171 @@
         <p class="text-small">
           <a href="#" class="right">Learn more</a>
         </p>
-        
       </div>
     </div>
-<!-- 
-    <aside class="half-1 left-side">
+
+    <aside class="half-1 left-side p-1">
       <div class="video-player">
-        <video src="video.mp4"></video>
+        <iframe
+          width="1192"
+          height="745"
+          src="https://www.youtube.com/embed/V74l_zS1x8E"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-      <section class="caption">
-        <h2 class="caption-text">Contributing to Open Source Part I: The Easy Way</h2>
-        <div class="channel-body">
-          <img alt="The Odin Project" class="channel-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgUCCAMNAwMEAwkEBQgFBQQQBQoHBxAIDAYMDAsKCwoNDhIQDQ4RDgsLEBYJERMUFQwVCA8XGBYUDhELDAoBAwQEBgUGCgYGCBQNCwsUExQODhANFBANFA0NFBAODRQJCxMJDRAUCw4LFAoLFA0UFBQNCAgICAgIDgkICAgICP/AABEIADAAMAMBEQACEQEDEQH/xAAaAAEAAwADAAAAAAAAAAAAAAAABAUHAQIG/8QAKhAAAQMDAQcDBQAAAAAAAAAAAQACAwQFEQYHEhMUITFBMjV0CFFhcbP/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAgUDBAYHAf/EACkRAAEDAQUHBQAAAAAAAAAAAAABAgMEBREhMZETMzRScZLREiJDUcH/2gAMAwEAAhEDEQA/AJC8POMCAIAgCAIAgCAu4dD3WoDDFp+6Ste0OY8UUhaQR0IO71H5WylNMqXpGvavgybN/Kuhy/Ql2iDi/T11YGjJdyUoGPv6UWlmT417V8DZv5V0KNaxjCAIAgNu2L7Zb/X1+lYKi/TyQOqIqY03DYBwwMBud3PYDyuls20al08cSye29Euwy0LGnqJFe1quwJW2/bPf7HctSw0N+np4Y5eEyn4cZG6YRkZLc+T58qdp2jUx1EkbZLm/WGWhKoqJGyOajsDB1y5WBAEAQHuthfvGk/nsVpZfFx9TZpt63qSvqE961T8kfxap2txcnX8QlVb1xnaqDUCAIAgJ9ivlRpqaklts3LS0kglhl3Guw4djhwIP6IWWKV0T0exblTIm1ytX1Jmh21DqGp1VNVS3So5qWqdvzTbjWZOAPS0ADoB2C+zSvmesj1vVc1DnK9fU7NSuWEgEAQBAEAQBAEB//9k=">
-          <span class="channel-name">The Odin Project</span>
-          <button type="button" class="btn subscribe"></button>
-          <span class="subcribers">799</span>
-          <span class="views">50,016 views</span>
+      <section class="caption bg-white p-1 mt-half">
+        <h2 class="caption-text">
+          Contributing to Open Source Part I: The Easy Way
+        </h2>
+        <div class="channel-body pb-half">
+          <div class="user-account">
+            <img
+            alt="The Odin Project"
+            class="channel-img"
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgUCCAMNAwMEAwkEBQgFBQQQBQoHBxAIDAYMDAsKCwoNDhIQDQ4RDgsLEBYJERMUFQwVCA8XGBYUDhELDAoBAwQEBgUGCgYGCBQNCwsUExQODhANFBANFA0NFBAODRQJCxMJDRAUCw4LFAoLFA0UFBQNCAgICAgIDgkICAgICP/AABEIADAAMAMBEQACEQEDEQH/xAAaAAEAAwADAAAAAAAAAAAAAAAABAUHAQIG/8QAKhAAAQMDAQcDBQAAAAAAAAAAAQACAwQFEQYHEhMUITFBMjV0CFFhcbP/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAgUDBAYHAf/EACkRAAEDAQUHBQAAAAAAAAAAAAABAgMEBREhMZETMzRScZLREiJDUcH/2gAMAwEAAhEDEQA/AJC8POMCAIAgCAIAgCAu4dD3WoDDFp+6Ste0OY8UUhaQR0IO71H5WylNMqXpGvavgybN/Kuhy/Ql2iDi/T11YGjJdyUoGPv6UWlmT417V8DZv5V0KNaxjCAIAgNu2L7Zb/X1+lYKi/TyQOqIqY03DYBwwMBud3PYDyuls20al08cSye29Euwy0LGnqJFe1quwJW2/bPf7HctSw0N+np4Y5eEyn4cZG6YRkZLc+T58qdp2jUx1EkbZLm/WGWhKoqJGyOajsDB1y5WBAEAQHuthfvGk/nsVpZfFx9TZpt63qSvqE961T8kfxap2txcnX8QlVb1xnaqDUCAIAgJ9ivlRpqaklts3LS0kglhl3Guw4djhwIP6IWWKV0T0exblTIm1ytX1Jmh21DqGp1VNVS3So5qWqdvzTbjWZOAPS0ADoB2C+zSvmesj1vVc1DnK9fU7NSuWEgEAQBAEAQBAEB//9k="
+          />
+          <div class=" px-1 py-0">
+            <p class="channel-name text-medium pb-half">The Odin Project</p>
+            <button type="button" class="btn subscribe m-0 white">
+              <!-- <span class="bg-youtube"></span> -->
+              <img
+                class="bg-youtube"
+                src="assets/img/youtube-logo.png"
+                alt="YouTube"
+              />
+              Subscribe
+            </button>
+            <span class="subcribers">799</span>
+          </div>
+          </div>
+
+          <p class="views">50,016 views</p>
         </div>
         <div class="channel-footer">
           <div class="left">
-            <i class="plus">Add to</i>
-            <i class="share">Share</i>
-            <i class="more">... more</i>
+            <span class="descent text-small">
+              <i class="fas fa-plus descent"></i>
+              Add to</span
+            >
+            <span class="descent text-small">
+              <i class="fas fa-share"></i>
+              Share
+            </span>
+            <span class="descent text-small">
+              <i class="fas fa-ellipsis-h"></i>
+              More
+            </span>
           </div>
           <div class="right">
-            <i class="thumb-up">359</i>
-            <i class="thumb-down">14</i>
+            <span class="descent text-small">
+              <i class="fas fa-thumbs-up"></i>
+              359
+            </span>
+            <span class="descent text-small">
+              <i class="fas fa-thumbs-down"></i>
+              14
+            </span>
           </div>
         </div>
       </section>
-      <section class="desc">
-        <h4 class="headline">Published on Feb 27, 2014</h4>
-        <p class="desc">
-          How do you contribute to open source? In this video, I'll describe
-          the easiest way to make a simple contribution to an open source
-          project -- without using the command line, a text editor, "forking a
-          repo", or even touching Git outside of Github. I'll also describe
-          what kinds of contributions open source software projects are
-          typically looking for. As an example, I use submitting a student
-          solution to a web development exercise from The Odin Project, a free
-          online curriculum for learning web development with Ruby on Rails.
-          You can find more information about that project at
-          http://theodinproject.com.
+      <section class="video-desc bg-white mt-half">
+        <h4 class="headline m-0 text-medium">Published on Feb 27, 2014</h4>
+        <p class="desc m-0 text-small pb-half">
+          How do you contribute to open source? In this video, I'll describe the
+          easiest way to make a simple contribution to an open source project --
+          without using the command line, a text editor, "forking a repo", or
+          even touching Git outside of Github. I'll also describe what kinds of
+          contributions open source software projects are typically looking for.
+          As an example, I use submitting a student solution to a web
+          development exercise from The Odin Project, a free online curriculum
+          for learning web development with Ruby on Rails. You can find more
+          information about that project at http://theodinproject.com.
         </p>
-        <hr />
-        <a href="#" class="descent-text">show more</a>
+
+        <div class="show-more text-medium text-center m-0 pt-half">
+          <a href="#" class="descent">show more</a>
+        </div>
+        
       </section>
-      <section class="comments">
-          <h6>Comments</h6>
-        <i class="fas fa-spinner">Loading</i>
+      <section class="comments bg-white mt-half p-2">
+        <span class="text-medium descent">
+          <i class="fas fa-spinner"></i>
+          Loading
+        </span>
+        
       </section>
     </aside>
 
     <aside class="half-2 right-side">
-        <div class="panel">
-            <div class="panel-header">
-              <span class="text">Up next</span>
-              <div class="auto-play-setting inline-input">
-                  <label for="autoplay">Autoplay</label>
-                  <input id="autoplay" type="radio" name="autoplay" value="on">
-                  <input type="radio" name="autoplay" value="off">
-              </div>
-            </div>
-            <div class="panel-body">
-
-              <div class="card">
-                  <img src="assets/img/Contributing_to_Open_Source_Part_II.jpeg" alt="Contributing to Open Source Part II" class="thumbnail">
-                  <span class="video-title">
-                      Contributing to Open Source Part II: The Real Way
-                  </span>
-                  <span class="channel text-descent">The Odin Project</span>
-                  <span class="text-descent">29,985 views</span>
-                  <hr>
-              </div>
-
-              <div class="card">
-                  <img src="assets/img/How_to_Get_a_Job_at_the_Big_4.jpeg" alt="How to Get a Job at the Big 4" class="thumbnail">
-                  <span class="video-title">
-                      How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft' by Sean Lee
-                  </span>
-                  <span class="channel text-descent">imtiana</span>
-                  <span class="text-descent">981,543 views</span>
-              </div>
-
-              <div class="card">
-                  <img src="assets/img/Programming_in_Visual_Basic_.Net_How_to_Connect_Access_Database_to_VB.Net.jpeg" alt="Programming in Visual Basic .Net How to Connect Access Database to VB.Net" class="thumbnail">
-                  <span class="video-title">
-                      Programming in Visual Basic .Net How to Connect Access Database to VB.Net
-                  </span>
-                  <span class="channel text-descent">iBasskung</span>
-                  <span class="text-descent">16,130,993 views</span>
-                  <hr>
-              </div>
-            </div>
-            <div class="panel footer">
-              <a href="#" class="text-descent uppercase">show more</a>
-            </div>
+      <!-- <div class="panel">
+        <div class="panel-header">
+          <span class="text">Up next</span>
+          <div class="auto-play-setting inline-input">
+            <label for="autoplay">Autoplay</label>
+            <input id="autoplay" type="radio" name="autoplay" value="on" />
+            <input type="radio" name="autoplay" value="off" />
+          </div>
         </div>
+        <div class="panel-body">
+          <div class="card">
+            <img
+              src="assets/img/Contributing_to_Open_Source_Part_II.jpeg"
+              alt="Contributing to Open Source Part II"
+              class="thumbnail"
+            />
+            <span class="video-title">
+              Contributing to Open Source Part II: The Real Way
+            </span>
+            <span class="channel text-descent">The Odin Project</span>
+            <span class="text-descent">29,985 views</span>
+            <hr />
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/img/How_to_Get_a_Job_at_the_Big_4.jpeg"
+              alt="How to Get a Job at the Big 4"
+              class="thumbnail"
+            />
+            <span class="video-title">
+              How to Get a Job at the Big 4 - Amazon, Facebook, Google &
+              Microsoft' by Sean Lee
+            </span>
+            <span class="channel text-descent">imtiana</span>
+            <span class="text-descent">981,543 views</span>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/img/Programming_in_Visual_Basic_.Net_How_to_Connect_Access_Database_to_VB.Net.jpeg"
+              alt="Programming in Visual Basic .Net How to Connect Access Database to VB.Net"
+              class="thumbnail"
+            />
+            <span class="video-title">
+              Programming in Visual Basic .Net How to Connect Access Database to
+              VB.Net
+            </span>
+            <span class="channel text-descent">iBasskung</span>
+            <span class="text-descent">16,130,993 views</span>
+            <hr />
+          </div>
+        </div>
+        <div class="panel footer">
+          <a href="#" class="text-descent uppercase">show more</a>
+        </div>
+      </div> -->
     </aside>
 
-    <footer class="row footer">
+  <footer class="row footer">
       <div class="setting">
         <div class="brand">
-            <img class="brand-img" alt="" src="assets/img/logo.png'" />
-            <i class="super-script">NL</i>
+          <img class="brand-img" alt="" src="assets/img/logo.png'" />
+          <i class="super-script">NL</i>
         </div>
         <div class="lang btn-setting">
-          <label for="language" class = 'language'>
+          <label for="language" class="language">
             <i class="fas fa-user-edit"></i>
             language
           </label>
@@ -167,7 +224,7 @@
         </div>
 
         <div class="loc btn-setting">
-          <label for="location" class ='location' >
+          <label for="location" class="location">
             Location
           </label>
           <select name="location" id="location">
@@ -195,7 +252,7 @@
             <i class="fas fa-question-circle">Help</i>
           </button>
         </div>
-    </div>
+      </div>
       <hr />
       <div class="imp-links">
         <ul class="bold">
@@ -222,28 +279,21 @@
           </li>
         </ul>
         <ul class="light">
-            <li>
-              <a href="#">Terms</a>
-            </li>
-            <li>
-              <a href="#">Privacy</a>
-            </li>
-            <li>
-              <a href="#">Policy & Safety</a>
-            </li>
-  
-            <li>
-              <a href="#">Test new features</a>
-            </li>
-        </ul>
-        </div>
-<<<<<<< HEAD
-    </footer> -->
+          <li>
+            <a href="#">Terms</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+          <li>
+            <a href="#">Policy & Safety</a>
+          </li>
 
-=======
+          <li>
+            <a href="#">Test new features</a>
+          </li>
+        </ul>
+      </div>
     </footer>
->>>>>>> a593c3a09a9c138992d91df777bcb994a0f2b794
   </body>
 </html>
-
-
