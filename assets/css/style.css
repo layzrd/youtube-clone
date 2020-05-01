@@ -351,7 +351,7 @@ iframe {
 }
 
 /* right side bar (video suggestion component) */
-.card {
+.card, .card-1,.card-2,.card-3,.card-4,.card-5,.card-6,.card-7 {
   display: flex;
   margin-bottom: 1em;
 }
