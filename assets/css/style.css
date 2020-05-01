@@ -90,16 +90,24 @@ body {
   grid-column-end: 3;
 }
 
-/* 
+/*
 flex positioning
 */
 .row.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.row.header * {
+  flex-grow: 1;
 }
 
-/* 
+.form-inline {
+  flex-grow: 9 !important;
+}
+
+/*
 spacing
 */
 
@@ -148,9 +156,14 @@ spacing
   margin-left: -2px;
 }
 
-/* 
+/*
 header
  */
+
+.row.header {
+  background-color: #fff;
+  padding: 0.5em 1em;
+}
 
 .brand-img {
   width: 100px;
@@ -164,7 +177,7 @@ header
   color: #777777;
 }
 
-/* 
+/*
 header forms
 */
 
@@ -181,6 +194,7 @@ header forms
   color: #a0a0a0;
   background: #f8f8f8;
   padding: 0 2em;
+  border: 1px solid #e8e2e2;
 }
 
 .input-inline {
@@ -196,7 +210,9 @@ li {
 }
 
 .nav-list {
-  margin-right: 2em;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
 }
 .list-item {
   display: inline;
@@ -318,10 +334,10 @@ iframe {
   max-width: 100%;
 }
 
-/* 
+/*
 media queries
 */
-@media (min-width: 320px) and (max-width: 580px) {
+@media (min-width: 320px) and (max-width: 980px) {
   .form-inline {
     padding-bottom: 0.5em;
   }
