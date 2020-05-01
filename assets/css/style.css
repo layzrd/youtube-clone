@@ -28,9 +28,16 @@
   padding: 1em 1em 0.5em;
 }
 
+.text-big {
+  line-height: normal;
+
+font-size: 15px;
+
+font-weight: 600;
+}
+
 .channel-name {
-  margin: 0;
-  padding: 0.1em;
+  padding: 0.3em;
 }
 .btn.subscribe {
   padding: 0.46em 0.5em;
@@ -70,7 +77,7 @@ grid positioning
 body {
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(5, auto);
   background-color: #f1f1f1;
 }
@@ -124,6 +131,12 @@ spacing
 .pt-half {
   padding-top: 0.5em;
 }
+
+.px-half {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -307,6 +320,7 @@ color
 /* font */
 p {
   line-height: normal;
+  margin: 0;
 }
 .text-medium {
   font-size: 13px;
@@ -332,6 +346,29 @@ video player
 iframe {
   max-width: 100%;
 }
+
+/* right side bar (video suggestion component) */
+.card {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.card .thumbnail {
+  height: 94px;
+  width: 168px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info * {
+  padding-bottom: 0.3em;
+}
+
+
+
 
 /*
 media queries
@@ -373,11 +410,6 @@ a.right {
   font-size: smaller;
   text-decoration: none;
   float: right;
-}
-
-span {
-  margin-left: 15px;
-  font-size: smaller;
 }
 
 label {
@@ -441,12 +473,6 @@ select#res-mode{
 
     span.video-title,span.channel.text-descent,span.text-descent{margin-left: 0px;
     font-size:1.5em;}
-    div.card{display:grid;}
-    img.thumbnail{width: 350px;
-      height: 200px;}
-
-      div.panel-body{width: 400px;
-        margin-bottom: 400px;}
 
       label.playing{font-size: medium;
     color: #3455eb;
