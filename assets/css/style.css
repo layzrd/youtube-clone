@@ -135,37 +135,25 @@ a {
   background: rgb(247, 247, 247);
 }
 
-
-/*
-grid header
-*/
-
-.header-grid {
-  display: grid;
-  grid-template-columns: 4em 10em auto 20em;
-  height: 60px;
-  align-content: center;
-}
-
-.toggler, .brand, .form-inline, .nav-list {
-  align-self: center;
-}
-
-.toggler {
-  justify-self: center;
-}
-
 /*
 flex positioning
 */
+.row.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5em 1em;
+}
 
 .row.header * {
   flex-grow: 1;
 }
 
 .form-inline {
-  display: flex;
-  width: 100%;
+  flex-grow: 9 !important;
+  width: 60%;
+  display: inherit;
 }
 
 /*
@@ -211,10 +199,6 @@ spacing
   padding: 0 2em;
 }
 
-.pl-1 {
-  padding-left: 1em;
-}
-
 .px-1 {
   padding-left: 1em;
   padding-right: 1em;
@@ -246,7 +230,6 @@ header
  */
 
 .brand-img {
-  flex-grow: 3 !important;
   width: 100px;
   height: 30px;
 }
@@ -279,12 +262,11 @@ header forms
   margin: 0;
   display: inline-flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .list-item {
   display: inline;
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 .btn-blue {
@@ -330,10 +312,6 @@ color
 
 .descent {
   color: #808080;
-}
-
-.mild {
-  color: #4f4e4e;
 }
 
 .black {
@@ -423,6 +401,13 @@ media queries
 code from @Ade
 */
 
+i.close {
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+  color: white;
+}
+
 div.banner-header {
   height: 30px;
   width: auto;
@@ -498,3 +483,7 @@ span.channel.text-descent {
   color: blueviolet;
   font-size: medium;
 }
+
+.left{display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-gap: 35px;}
