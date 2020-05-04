@@ -218,9 +218,8 @@ flex positioning
 }
 
 .form-inline {
-  flex-grow: 9 !important;
-  width: 60%;
-  display: inherit;
+  display: flex;
+  width: 100%;
 }
 
 /*
