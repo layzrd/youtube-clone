@@ -303,6 +303,7 @@ bannner
   justify-content: space-between;
   align-items: center;
   font: 1em bold;
+  height: 30px;
 }
 
 /**
@@ -332,11 +333,11 @@ p {
 }
 
 .text-medium {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .text-small {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .caption-text {
@@ -410,6 +411,8 @@ i.close {
 div.banner-header {
   height: 30px;
   width: auto;
+  background-color: #387cc0;
+  color: white;
 }
 
 a.right {
