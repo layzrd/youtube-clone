@@ -545,3 +545,7 @@ span.channel.text-descent {
 .left{display: grid;
   grid-template-columns: repeat(3,auto);
   grid-gap: 35px;}
+
+  .right{display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-gap: 25px;}
