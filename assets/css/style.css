@@ -5,8 +5,6 @@ ul {
   margin: 0;
 }
 
-
-
 .text-center {
   text-align: center;
 }
@@ -31,14 +29,14 @@ ul {
   font-size: 15px;
   font-weight: 600;
 }
-/* 
+
+/*
 caption
 */
 .caption.bg-white.p-1.mt-half {
   display: flex;
   flex-direction: column;
 }
-
 
 .channel-body {
   height: 3em;
@@ -59,13 +57,11 @@ caption
 }
 
 .user-account {
-
   grid-area: 1/2/2/3;
   justify-self: start;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .btn.subscribe {
@@ -111,7 +107,7 @@ caption
   background-color: #097ce1;
   position: relative;
   overflow: hidden;
-  width: 50%;
+  width: 90%;
 }
 
 .channel-footer {
@@ -187,7 +183,6 @@ a {
   border: none;
   background: rgb(247, 247, 247);
 }
-
 
 /*
 grid header
@@ -473,13 +468,6 @@ media queries
 code from @Ade
 */
 
-i.close {
-  float: right;
-  margin-right: 20px;
-  margin-top: 5px;
-  color: white;
-}
-
 div.banner-header {
   height: 30px;
   width: auto;
@@ -490,7 +478,6 @@ div.banner-header {
 a.right {
   font-size: smaller;
   text-decoration: none;
-  float: right;
 }
 
 label {
@@ -556,10 +543,14 @@ span.channel.text-descent {
   font-size: medium;
 }
 
-.left{display: grid;
-  grid-template-columns: repeat(3,auto);
-  grid-gap: 35px;}
+.left {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 35px;
+}
 
-  .right{display: grid;
-  grid-template-columns: repeat(2,auto);
-  grid-gap: 25px;}
+.right {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 25px;
+}
