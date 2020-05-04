@@ -7,12 +7,6 @@ ul {
 
 
 
-.user-account {
-  display: flex;
-}
-
-
-
 .text-center {
   text-align: center;
 }
@@ -43,7 +37,6 @@ caption
 .caption.bg-white.p-1.mt-half {
   display: flex;
   flex-direction: column;
-
 }
 
 
@@ -58,11 +51,6 @@ caption
 }
 
 .views {
-  grid-area: 1/7/2/8;
-  align-self: end;
-  justify-self: end;
-  border-bottom: 1px #097ce1 solid;
-  padding-left: 2em;
   font-weight: 599;
   font-size: 1.5em;
   line-height: 1.3em;
@@ -88,16 +76,42 @@ caption
   font-weight: 500;
 }
 
-.subcribers {
+.subscribers {
   background-color: #eceaea;
   color: #757575;
   font-size: 12px;
   height: 1em;
   display: inline-block;
   position: absolute;
-  padding: 0.5em;
+  padding: 0.41em 0.5em;
   border: 1px solid #c8c5c5;
   border-left: none;
+}
+
+.edge-info {
+  grid-area: 1/7/2/8;
+  align-self: end;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-bottom: 0.4em;
+}
+
+.pg-wrapper {
+  height: 3px;
+  position: relative;
+  background: #f2f2f2;
+  width: 7em;
+}
+
+.progress-bar {
+  display: block;
+  height: 100%;
+  background-color: #097ce1;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
 }
 
 .channel-footer {
