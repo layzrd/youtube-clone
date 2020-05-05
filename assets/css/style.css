@@ -130,7 +130,7 @@ grid positioning
 body {
   background-color: #f1f1f1;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 70% 30%;
   grid-template-rows: repeat(5, auto);
 }
 
@@ -508,8 +508,8 @@ a.right {
 
 .left,
 .right {
-  display: grid;
   column-gap: 1.3em;
+  display: grid;
 }
 
 .left {
