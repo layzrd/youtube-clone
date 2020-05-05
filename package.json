@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/abredi/youtube-clone#readme",
   "devDependencies": {
+    "csscomb": "^4.3.0",
     "stylelint": "^13.3.3",
     "stylelint-config-recommended": "^3.0.0"
   },
