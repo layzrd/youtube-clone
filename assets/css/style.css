@@ -506,15 +506,17 @@ a.right {
   margin-top: 7px;
 }
 
-.left {
+.left,
+.right {
   display: grid;
-  grid-column-gap: 1.3em;
+  column-gap: 1.3em;
+}
+
+.left {
   grid-template-columns: repeat(3, auto);
 }
 
 .right {
-  display: grid;
-  grid-column-gap: 1.3em;
   grid-template-columns: repeat(2, auto);
 }
 
@@ -531,6 +533,6 @@ a.right {
 @media (min-width: 320px) and (max-width: 630px) {
   .right,
   .left {
-    grid-column-gap: 1em;
+    column-gap: 1em;
   }
 }
