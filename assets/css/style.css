@@ -411,6 +411,8 @@ video player
 */
 
 iframe {
+  width: 1192;
+  height: 745;
   border: none;
   max-width: 100%;
 }
