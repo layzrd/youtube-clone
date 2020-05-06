@@ -411,10 +411,10 @@ video player
 */
 
 iframe {
-  width: 1192;
-  height: 745;
   border: none;
+  height: 745;
   max-width: 100%;
+  width: 1192;
 }
 
 /* right side bar (video suggestion component) */
